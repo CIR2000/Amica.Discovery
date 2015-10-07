@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amica.vNext.Discovery", "Amica.vNext.Discovery\Amica.vNext.Discovery.csproj", "{BDF77B1F-5CD2-4487-AA01-4A10A8F314F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve.NET.Net4", "..\..\Eve.NET\Eve.NET.Net4\Eve.NET.Net4.csproj", "{D405D3C5-DE1C-4DB1-B920-2E7CD7F450AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDF77B1F-5CD2-4487-AA01-4A10A8F314F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF77B1F-5CD2-4487-AA01-4A10A8F314F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF77B1F-5CD2-4487-AA01-4A10A8F314F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF77B1F-5CD2-4487-AA01-4A10A8F314F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D405D3C5-DE1C-4DB1-B920-2E7CD7F450AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D405D3C5-DE1C-4DB1-B920-2E7CD7F450AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D405D3C5-DE1C-4DB1-B920-2E7CD7F450AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D405D3C5-DE1C-4DB1-B920-2E7CD7F450AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

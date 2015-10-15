@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Threading.Tasks;
 
-namespace Amica.vNext.Discovery
+namespace Amica.vNext
 {
     interface IDiscovery
     {
@@ -13,22 +12,22 @@ namespace Amica.vNext.Discovery
 	/// <param name="kind">Kind of API.</param>
 	/// <param name="version">Version. If null, the most recent version available will be returned.</param>
 	/// <returns>An ApiService istance or null if none matched the search criteria.</returns>
-        ApiService GetApiService(ApiKind kind, Version version=null);
+        Task<ApiService> GetService(ApiKind kind, Version version=null);
 
 	/// <summary>
-	/// Returns the Uri of an API Service of a given kind.
+	/// Returns the Uri of an API Service. Only services with an active status will be considered valid for selection.
 	/// </summary>
 	/// <param name="kind">Kind of API.</param>
 	/// <param name="version">Version. If null, the most recent version available will be returned.</param>
 	/// <returns>And Uri or null if non matched the search criteria.</returns>
-	/// <remarks>Helper method that internally calls <see cref="GetApiService(ApiKind, Version)"/>.</remarks>
-        Uri GetApiServiceAddress(ApiKind kind, Version version=null);
+	/// <remarks>Helper method that internally calls <see cref="GetService"/>.</remarks>
+        Task<Uri> GetServiceUri(ApiKind kind, Version version=null);
 
 	/// <summary>
-	/// Returns an API of a given kind.
+	/// Returns a list of APIs of a given kind.
 	/// </summary>
 	/// <param name="kind">Kind of API to be returned.</param>
 	/// <returns>An Api instance or null if none of that kind was found.</returns>
-        Api GetApi(ApiKind kind);
+        Task<List<Api>> GetApi(ApiKind kind);
     }
 }

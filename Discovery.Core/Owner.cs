@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Net;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Newtonsoft.Json;
 
-namespace Amica.vNext.Discovery
+namespace Amica.vNext
 {
     public class Owner
     {
+	[JsonProperty("name")]
 	public string Name { get; set; }
+	[JsonProperty("uri")]
 	public Uri Uri { get; set; }
+	[JsonProperty("contact")]
 	public string Contact { get; set; }
     }
 }

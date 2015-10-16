@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve.Net4", "..\..\Eve.NET\E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{99860A1D-1D85-4043-89B9-6FD3025060E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCache.Net4", "..\SimpleCache\SimpleCache.Net4\SimpleCache.Net4.csproj", "{5A320348-7AE0-421A-B3EC-25FF8FED4243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A320348-7AE0-421A-B3EC-25FF8FED4243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A320348-7AE0-421A-B3EC-25FF8FED4243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A320348-7AE0-421A-B3EC-25FF8FED4243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A320348-7AE0-421A-B3EC-25FF8FED4243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,12 +9,13 @@ namespace Amica.vNext
     public class Discovery : IDiscovery
     {
         private const string DiscoveryName = "Discovery";
-        private SqliteObjectCache _cache;
+        private readonly SqliteObjectCache _cache;
 
         public Discovery()
         {
             var callerName = Assembly.GetEntryAssembly().FullName.Split(',')[0];
             var applicationName = System.IO.Path.Combine(callerName, DiscoveryName);
+
             _cache = new SqliteObjectCache() { ApplicationName = applicationName };
         }
         public async Task<ApiService> GetService(ApiKind kind, Version version = null, bool ignoreCache=false)

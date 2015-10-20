@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Amica.vNext
 {
+    // TODO GetServicesAddresses which returns the list of available Uris for a given service.
+
     public class Discovery : IDiscovery
     {
         private const string DiscoveryName = "Discovery";

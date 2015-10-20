@@ -87,11 +87,15 @@ namespace Amica.vNext
             return api;
         }
 
-        private static async Task<List<Api>> PerformRequest(string query)
+        private async Task<List<Api>> PerformRequest(string query)
         {
-            var eve = new Eve.EveClient() { BaseAddress = new Uri("http://10.0.2.2:9000") };
+            if (BaseAddress == null)
+                throw new ArgumentNullException(nameof(BaseAddress));
+
+            var eve = new Eve.EveClient() { BaseAddress = BaseAddress };
 
             return await eve.GetAsync<Api>("apis", false, query);
         }
+	public  Uri BaseAddress { get; set; }
     }
 }

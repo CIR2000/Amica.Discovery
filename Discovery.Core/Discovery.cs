@@ -54,7 +54,7 @@ namespace Amica.vNext
             return service;
         }
 
-        public async Task<Uri> GetServiceUri(ApiKind kind, Version version = null, bool ignoreCache=false)
+        public async Task<Uri> GetServiceAddress(ApiKind kind, Version version = null, bool ignoreCache=false)
         {
             var service = await GetService(kind, version, ignoreCache);
             return service?.BaseAddress;

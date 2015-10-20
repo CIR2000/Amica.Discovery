@@ -21,7 +21,7 @@ namespace Amica.vNext
 	/// <param name="version">Version. If null, the most recent version available will be returned.</param>
 	/// <returns>And Uri or null if non matched the search criteria.</returns>
 	/// <remarks>Helper method that internally calls <see cref="GetService"/>.</remarks>
-        Task<Uri> GetServiceUri(ApiKind kind, Version version=null, bool ignoreCache=false);
+        Task<Uri> GetServiceAddress(ApiKind kind, Version version=null, bool ignoreCache=false);
 
 	/// <summary>
 	/// Returns an APIs of a given kind.

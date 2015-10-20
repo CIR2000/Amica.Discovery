@@ -5,7 +5,7 @@ namespace Amica.vNext
     /// <summary>
     /// Thrown when no API of a given kind has been found.
     /// </summary>
-    class ApiNotAvailableDiscoveryException : Exception
+    public class ApiNotAvailableDiscoveryException : Exception
     {
     }
 }

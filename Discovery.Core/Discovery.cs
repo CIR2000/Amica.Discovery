@@ -23,7 +23,7 @@ namespace Amica.vNext
         public async Task<ApiService> GetService(ApiKind kind, Version version = null, bool ignoreCache=false)
         {
 
-	    var cacheKey = (version == null) ? $"{kind}-service" : $"{kind}-v{version}-service";
+			var cacheKey = (version == null) ? $"{kind}-service" : $"{kind}-v{version}-service";
             if (ignoreCache == false)
             {
                 try
@@ -35,23 +35,23 @@ namespace Amica.vNext
 
             var query = new StringBuilder();
             query.Append("{");
-	    query.Append($"\"kind\": \"{kind}\"");
+			query.Append($"\"kind\": \"{kind}\"");
             if (version != null)
             {
-		query.Append($", \"services.version.major\": {version.Major}");
-		query.Append($", \"services.version.minor\": {{\"$gte\": {version.Minor}}}");
-		//query.Append($", \"services.version.build\": {version.Build}");
+				query.Append($", \"services.version.major\": {version.Major}");
+				query.Append($", \"services.version.minor\": {{\"$gte\": {version.Minor}}}");
+				//query.Append($", \"services.version.build\": {version.Build}");
             }
             query.Append("}");
-            var apis = await PerformRequest(query.ToString());
 
+            var apis = await PerformRequest(query.ToString());
             if (apis.Count == 0)
                 throw new ApiNotAvailableDiscoveryException();
 
-	    // by default documents are sorted by version, descending.
+			// by default documents are sorted by version, descending.
             var service = apis[0].Services[0];
 
-	    await _cache.Insert(cacheKey, service);
+			await _cache.Insert(cacheKey, service);
 
             return service;
         }

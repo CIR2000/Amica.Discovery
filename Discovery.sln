@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCache.Net4", "..\SimpleCache\SimpleCache.Net4\SimpleCache.Net4.csproj", "{5A320348-7AE0-421A-B3EC-25FF8FED4243}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discovery.iOS", "Discovery.iOS\Discovery.iOS.csproj", "{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCache.iOS", "..\SimpleCache\SimpleCache.iOS\SimpleCache.iOS.csproj", "{AECC0B9C-1E6F-47ED-9A52-C572039A804E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve.iOS", "..\..\Eve.NET\Eve.iOS\Eve.iOS.csproj", "{C932BF3E-ECDD-4A3C-9BA2-10D92A6C3143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{5A320348-7AE0-421A-B3EC-25FF8FED4243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A320348-7AE0-421A-B3EC-25FF8FED4243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A320348-7AE0-421A-B3EC-25FF8FED4243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECC0B9C-1E6F-47ED-9A52-C572039A804E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECC0B9C-1E6F-47ED-9A52-C572039A804E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECC0B9C-1E6F-47ED-9A52-C572039A804E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECC0B9C-1E6F-47ED-9A52-C572039A804E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C932BF3E-ECDD-4A3C-9BA2-10D92A6C3143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C932BF3E-ECDD-4A3C-9BA2-10D92A6C3143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C932BF3E-ECDD-4A3C-9BA2-10D92A6C3143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C932BF3E-ECDD-4A3C-9BA2-10D92A6C3143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

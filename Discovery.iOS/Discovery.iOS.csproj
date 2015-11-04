@@ -34,24 +34,6 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Discovery.Core\Api.cs">
-      <Link>Api.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\ApiService.cs">
-      <Link>ApiService.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\Discovery.cs">
-      <Link>Discovery.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\Exceptions.cs">
-      <Link>Exceptions.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\IDiscovery.cs">
-      <Link>IDiscovery.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\Owner.cs">
-      <Link>Owner.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

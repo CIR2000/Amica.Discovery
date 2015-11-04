@@ -90,24 +90,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Discovery.Core\Api.cs">
-      <Link>Api.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\ApiService.cs">
-      <Link>ApiService.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\Discovery.cs">
-      <Link>Discovery.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\Exceptions.cs">
-      <Link>Exceptions.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\IDiscovery.cs">
-      <Link>IDiscovery.cs</Link>
-    </Compile>
-    <Compile Include="..\Discovery.Core\Owner.cs">
-      <Link>Owner.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +107,7 @@
       <Name>SimpleCache.Net4</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\Discovery.Core\Discovery.Core.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

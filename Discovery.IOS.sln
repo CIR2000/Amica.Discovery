@@ -11,8 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve.iOS", "..\..\Eve.NET\Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models\Models.csproj", "{38931933-1E9D-4DF3-BDDE-75E81E3234F4}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Discovery.Core", "Discovery.Core\Discovery.Core.shproj", "{9052B5FB-BBEA-4A6C-9EC0-C5E90BF3AA6C}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Discovery.Core\Discovery.Core.projitems*{9052b5fb-bbea-4a6c-9ec0-c5e90bf3aa6c}*SharedItemsImports = 13
 		..\..\Eve.NET\Eve.Core\Eve.Core.projitems*{c932bf3e-ecdd-4a3c-9ba2-10d92a6c3143}*SharedItemsImports = 4
 		..\SimpleCache\SimpleCache.Core\SimpleCache.Core.projitems*{aecc0b9c-1e6f-47ed-9a52-c572039a804e}*SharedItemsImports = 4
 	EndGlobalSection

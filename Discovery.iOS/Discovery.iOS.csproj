@@ -8,7 +8,7 @@
     <ProjectGuid>{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Discovery.iOS</RootNamespace>
+    <RootNamespace>Amica.vNext</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>Discovery.iOS</AssemblyName>
   </PropertyGroup>
@@ -50,11 +50,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Eve.NET\Eve.iOS\Eve.iOS.csproj">
-      <Project>{c932bf3e-ecdd-4a3c-9ba2-10d92a6c3143}</Project>
-      <Name>Eve.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
+    <ProjectReference Include="..\..\..\Eve.NET\Eve\Eve.csproj">
+      <Project>{dd88d007-ad10-470d-9c89-aa8ee39857d0}</Project>
+      <Name>Eve</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SimpleCache\SimpleCache.iOS\SimpleCache.iOS.csproj">
       <Project>{aecc0b9c-1e6f-47ed-9a52-c572039a804e}</Project>

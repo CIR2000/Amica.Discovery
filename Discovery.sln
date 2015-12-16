@@ -15,13 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve", "..\..\Eve.NET\Eve\Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve.Net4", "..\..\Eve.NET\Eve.Net4\Eve.Net4.csproj", "{C5DEAD7A-1511-4516-9334-420CE21D3DC8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{A21A23E7-E0A4-41CC-A209-8E407D1DC35C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net4", "Net4", "{63C6F7B4-D9BF-4EC5-B363-779084F36DA0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portable", "Portable", "{2963D240-C5A1-42FF-AC2A-58FC6795E13A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCache", "..\SimpleCache\SimpleCache\SimpleCache.csproj", "{C4CBE63F-2EB6-404F-9CF2-44FBF42E35E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discovery.iOS", "Discovery.iOS\Discovery.iOS.csproj", "{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}"
 EndProject
@@ -31,14 +25,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{400C41D4-EAC
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SimpleCache.Core", "..\SimpleCache\SimpleCache.Core\SimpleCache.Core.shproj", "{F0F65631-C26B-4A72-B0A3-4A770383A71B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net45", "Net45", "{22CEBEF6-3F4D-42E2-8042-537D007868CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discovery.Net45", "Discovery.Net45\Discovery.Net45.csproj", "{9D11806A-06D4-4264-80EB-4C426373DBD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCache.Net45", "..\SimpleCache\SimpleCache.Net45\SimpleCache.Net45.csproj", "{0B199775-AA32-4673-8C1F-9EC88754D751}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\..\Eve.NET\Eve.Core\Eve.Core.projitems*{c5dead7a-1511-4516-9334-420ce21d3dc8}*SharedItemsImports = 4
 		Discovery.Core\Discovery.Core.projitems*{e1c6f26a-d2f2-43bc-9f1e-a5c7b5865342}*SharedItemsImports = 4
+		Discovery.Core\Discovery.Core.projitems*{9d11806a-06d4-4264-80eb-4c426373dbd9}*SharedItemsImports = 4
 		..\..\Eve.NET\Eve.Core\Eve.Core.projitems*{dd88d007-ad10-470d-9c89-aa8ee39857d0}*SharedItemsImports = 4
 		Discovery.Core\Discovery.Core.projitems*{4b684125-389e-4edf-87e9-905785f700a5}*SharedItemsImports = 4
 		Discovery.Core\Discovery.Core.projitems*{9052b5fb-bbea-4a6c-9ec0-c5e90bf3aa6c}*SharedItemsImports = 13
 		..\SimpleCache\SimpleCache.Core\SimpleCache.Core.projitems*{5a320348-7ae0-421a-b3ec-25ff8fed4243}*SharedItemsImports = 4
+		..\SimpleCache\SimpleCache.Core\SimpleCache.Core.projitems*{0b199775-aa32-4673-8c1f-9ec88754d751}*SharedItemsImports = 4
 		..\SimpleCache\SimpleCache.Core\SimpleCache.Core.projitems*{aecc0b9c-1e6f-47ed-9a52-c572039a804e}*SharedItemsImports = 4
 		..\SimpleCache\SimpleCache.Core\SimpleCache.Core.projitems*{f0f65631-c26b-4a72-b0a3-4a770383a71b}*SharedItemsImports = 13
 	EndGlobalSection
@@ -67,10 +69,6 @@ Global
 		{C5DEAD7A-1511-4516-9334-420CE21D3DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5DEAD7A-1511-4516-9334-420CE21D3DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5DEAD7A-1511-4516-9334-420CE21D3DC8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4CBE63F-2EB6-404F-9CF2-44FBF42E35E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4CBE63F-2EB6-404F-9CF2-44FBF42E35E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4CBE63F-2EB6-404F-9CF2-44FBF42E35E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4CBE63F-2EB6-404F-9CF2-44FBF42E35E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,6 +77,14 @@ Global
 		{AECC0B9C-1E6F-47ED-9A52-C572039A804E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AECC0B9C-1E6F-47ED-9A52-C572039A804E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AECC0B9C-1E6F-47ED-9A52-C572039A804E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D11806A-06D4-4264-80EB-4C426373DBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D11806A-06D4-4264-80EB-4C426373DBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D11806A-06D4-4264-80EB-4C426373DBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D11806A-06D4-4264-80EB-4C426373DBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B199775-AA32-4673-8C1F-9EC88754D751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B199775-AA32-4673-8C1F-9EC88754D751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B199775-AA32-4673-8C1F-9EC88754D751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B199775-AA32-4673-8C1F-9EC88754D751}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,13 +92,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4B684125-389E-4EDF-87E9-905785F700A5} = {63C6F7B4-D9BF-4EC5-B363-779084F36DA0}
 		{5A320348-7AE0-421A-B3EC-25FF8FED4243} = {63C6F7B4-D9BF-4EC5-B363-779084F36DA0}
-		{DD88D007-AD10-470D-9C89-AA8EE39857D0} = {2963D240-C5A1-42FF-AC2A-58FC6795E13A}
 		{C5DEAD7A-1511-4516-9334-420CE21D3DC8} = {63C6F7B4-D9BF-4EC5-B363-779084F36DA0}
-		{63C6F7B4-D9BF-4EC5-B363-779084F36DA0} = {A21A23E7-E0A4-41CC-A209-8E407D1DC35C}
-		{2963D240-C5A1-42FF-AC2A-58FC6795E13A} = {A21A23E7-E0A4-41CC-A209-8E407D1DC35C}
-		{C4CBE63F-2EB6-404F-9CF2-44FBF42E35E2} = {2963D240-C5A1-42FF-AC2A-58FC6795E13A}
 		{E1C6F26A-D2F2-43BC-9F1E-A5C7B5865342} = {400C41D4-EAC6-4E5E-BE03-2C6196CD28AB}
 		{AECC0B9C-1E6F-47ED-9A52-C572039A804E} = {400C41D4-EAC6-4E5E-BE03-2C6196CD28AB}
-		{400C41D4-EAC6-4E5E-BE03-2C6196CD28AB} = {A21A23E7-E0A4-41CC-A209-8E407D1DC35C}
+		{9D11806A-06D4-4264-80EB-4C426373DBD9} = {22CEBEF6-3F4D-42E2-8042-537D007868CB}
+		{0B199775-AA32-4673-8C1F-9EC88754D751} = {22CEBEF6-3F4D-42E2-8042-537D007868CB}
 	EndGlobalSection
 EndGlobal

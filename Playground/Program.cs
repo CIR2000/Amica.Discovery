@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Nito.AsyncEx;
 
 namespace Playground
 {
@@ -14,7 +13,7 @@ namespace Playground
         {
             try
             {
-                AsyncContext.Run(() => Test());
+                Test().Wait();
             }
             catch (Exception ex)
             {

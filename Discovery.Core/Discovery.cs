@@ -15,8 +15,11 @@ namespace Amica.vNext
 
         public Discovery()
         {
-            var callerName = Assembly.GetEntryAssembly().FullName.Split(',')[0];
-            var applicationName = System.IO.Path.Combine(callerName, DiscoveryName);
+			// TODO maybe make ApplicationName a required constructor field because we could
+			// end up not knowing where the cache is actually stored (callerName happen to be null).
+            var callerName = Assembly.GetEntryAssembly()?.FullName.Split(',')[0];
+            var applicationName = System.IO.Path.Combine(
+				callerName ?? "DisoveryDefaultApplication", DiscoveryName);
 
             _cache = new SqliteObjectCache() { ApplicationName = applicationName };
         }

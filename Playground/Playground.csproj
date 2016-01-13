@@ -54,9 +54,9 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Discovery.Net45\Discovery.Net45.csproj">
-      <Project>{9d11806a-06d4-4264-80eb-4c426373dbd9}</Project>
-      <Name>Discovery.Net45</Name>
+    <ProjectReference Include="..\Discovery\Discovery.csproj">
+      <Project>{f2e61202-0fe9-4521-9216-1bbe1a856b20}</Project>
+      <Name>Discovery</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

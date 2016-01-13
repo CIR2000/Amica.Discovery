@@ -46,8 +46,8 @@ namespace Amica.vNext
     public enum ApiKind
     {
         Authentication,
-	Discovery,
-	UserData
+		Discovery,
+		UserData
     }
 }
 

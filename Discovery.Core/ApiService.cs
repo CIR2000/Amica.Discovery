@@ -47,14 +47,14 @@ namespace Amica.vNext
     {
         Active,
         Inactive,
-	Suspended,
-	Undetermined
+		Suspended,
+		Undetermined
     }
 
     public enum AuthenticationKind
     {
         BearerToken,
-	Basic,
-	None
+		Basic,
+		None
     }
 }

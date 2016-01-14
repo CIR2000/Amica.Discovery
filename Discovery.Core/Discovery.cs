@@ -13,11 +13,11 @@ namespace Amica.vNext
         {
 
 			var cacheKey = (version == null) ? $"{kind}-service" : $"{kind}-v{version}-service";
-            if (ignoreCache == false && Cache != null)
+            if (ignoreCache == false && LocalCache != null)
             {
                 try
                 {
-                    return await Cache.Get<ApiService>(cacheKey);
+                    return await LocalCache.Get<ApiService>(cacheKey).ConfigureAwait(false);
                 }
                 catch (KeyNotFoundException) { }
             }
@@ -33,33 +33,33 @@ namespace Amica.vNext
             }
             query.Append("}");
 
-            var apis = await PerformRequest(query.ToString());
+            var apis = await PerformRequest(query.ToString()).ConfigureAwait(false);
             if (apis.Count == 0)
                 throw new ApiNotAvailableDiscoveryException();
 
 			// by default documents are sorted by version, descending.
             var service = apis[0].Services[0];
 
-			if (Cache != null)
-				await Cache.Insert(cacheKey, service);
+			if (LocalCache != null)
+				await LocalCache.Insert(cacheKey, service).ConfigureAwait(false);
 
             return service;
         }
 
         public async Task<Uri> GetServiceAddress(ApiKind kind, Version version = null, bool ignoreCache=false)
         {
-            var service = await GetService(kind, version, ignoreCache);
+            var service = await GetService(kind, version, ignoreCache).ConfigureAwait(false);
             return service?.BaseAddress;
         }
 
         public async Task<Api> GetApi(ApiKind kind, bool ignoreCache=false)
         {
             var cacheKey = $"{kind}-api";
-            if (ignoreCache == false && Cache != null)
+            if (ignoreCache == false && LocalCache != null)
             {
                 try
                 {
-                    return  await Cache.Get<Api>(cacheKey);
+                    return  await LocalCache.Get<Api>(cacheKey);
                 }
                 catch (KeyNotFoundException) { }
             }
@@ -74,8 +74,8 @@ namespace Amica.vNext
 			// By design only one API of a given kind can exist.
             var api = apis[0];
 
-			if (Cache != null)
-				await Cache.Insert(cacheKey, api);
+			if (LocalCache != null)
+				await LocalCache.Insert(cacheKey, api);
 
             return api;
         }
@@ -87,9 +87,9 @@ namespace Amica.vNext
 
             var eve = new Eve.EveClient() { BaseAddress = BaseAddress };
 
-            return await eve.GetAsync<Api>("apis", false, query);
+            return await eve.GetAsync<Api>("apis", false, query).ConfigureAwait(false);
         }
 	public  Uri BaseAddress { get; set; }
-	public SqliteObjectCacheBase Cache { get; set; }
+	public IBulkObjectCache LocalCache { get; set; }
     }
 }

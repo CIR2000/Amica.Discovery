@@ -40,7 +40,7 @@ namespace Amica.vNext
 	[JsonProperty("owner")]
 	public Owner Owner { get; internal set; }
 
-        public List<ApiService> Services { get; }
+	public List<ApiService> Services { get; }
     }
 
     public enum ApiKind

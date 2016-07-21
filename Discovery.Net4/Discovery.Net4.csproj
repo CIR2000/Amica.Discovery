@@ -56,6 +56,10 @@
       <HintPath>..\..\Compatibility\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SimpleCache, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4186cdec8b7c3556, processorArchitecture=MSIL">
+      <HintPath>..\..\Compatibility\packages\SimpleCache.1.0.0\lib\Net4\SimpleCache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -105,10 +109,6 @@
     <ProjectReference Include="..\..\..\Eve.NET\Eve.Net4\Eve.Net4.csproj">
       <Project>{c5dead7a-1511-4516-9334-420ce21d3dc8}</Project>
       <Name>Eve.Net4</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SimpleCache\SimpleCache.Net4\SimpleCache.Net4.csproj">
-      <Project>{5a320348-7ae0-421a-b3ec-25ff8fed4243}</Project>
-      <Name>SimpleCache.Net4</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="..\Discovery.Core\Discovery.Core.projitems" Label="Shared" />

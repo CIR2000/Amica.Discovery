@@ -9,7 +9,7 @@ namespace Amica.vNext
 	///  Service Uri.
 	///  </summary>
 	[JsonProperty("base_address")]
-        public Uri BaseAddress { get; internal set; }
+	public Uri BaseAddress { get; internal set; }
 	/// <summary>
 	/// Current status of the service.
 	/// </summary>

@@ -2,7 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using SimpleCache;
+using SimpleObjectCache;
 
 namespace Amica.vNext
 {

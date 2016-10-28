@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>Amica.Discovery</id>
-    <version>0.1</version>
+    <version>0.0.1</version>
     <title>Amica.Discovery</title>
     <authors>Nicola Iarocci</authors>
     <owners>CIR 2000</owners>
-    <licenseUrl>https://github.com/CIR2000/Amica.vNext.Discovery/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/CIR2000/Amica.vNext.Discovery</projectUrl>
+    <licenseUrl>https://github.com/CIR2000/Amica.Discovery/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/CIR2000/Amica.Discovery</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>API Discovery service for the Amica platform</description>
     <copyright>Copyright 2016 CIR 2000</copyright>

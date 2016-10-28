@@ -14,7 +14,7 @@
 		<dependencies>
 			<group targetFramework="portable45-net45+win8+wp8+wpa81">
 				<dependency id="Eve.NET" version="0.2.0" />
-				<dependency id="SimpleObjectCache.Net" version="1.0.0" />
+				<dependency id="SimpleObjectCache" version="1.0.0" />
 				<dependency id="Newtonsoft.Json" version="8.0.2" />
         <dependency id="SQLite.Net.Core-PCL" version="3.1.1" />
         <dependency id="SQLite.Net-PCL" version="3.1.1" />

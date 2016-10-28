@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{99860A1D-1D85-4043-89B9-6FD3025060E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eve", "..\..\Eve.NET\Eve\Eve.csproj", "{DD88D007-AD10-470D-9C89-AA8EE39857D0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discovery", "Discovery\Discovery.csproj", "{F2E61202-0FE9-4521-9216-1BBE1A856B20}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E09399B-EA6D-4560-AFCD-3768D03A8E2F}"
@@ -27,10 +25,6 @@ Global
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD88D007-AD10-470D-9C89-AA8EE39857D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD88D007-AD10-470D-9C89-AA8EE39857D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD88D007-AD10-470D-9C89-AA8EE39857D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD88D007-AD10-470D-9C89-AA8EE39857D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F2E61202-0FE9-4521-9216-1BBE1A856B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2E61202-0FE9-4521-9216-1BBE1A856B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2E61202-0FE9-4521-9216-1BBE1A856B20}.Release|Any CPU.ActiveCfg = Release|Any CPU

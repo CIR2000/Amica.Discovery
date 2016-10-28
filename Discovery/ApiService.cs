@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Amica.vNext
+namespace Amica.Discovery
 {
     public class ApiService
     {

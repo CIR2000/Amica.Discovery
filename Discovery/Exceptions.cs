@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Amica.vNext
+namespace Amica.Discovery
 {
     /// <summary>
     /// Thrown when no API of a given kind has been found.

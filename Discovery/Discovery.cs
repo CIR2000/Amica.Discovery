@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using SimpleObjectCache;
 
-namespace Amica.vNext
+namespace Amica.Discovery
 {
     // TODO GetServicesAddresses which returns the list of available Uris for a given service.
 

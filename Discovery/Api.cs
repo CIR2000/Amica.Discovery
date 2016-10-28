@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Amica.vNext
+namespace Amica.Discovery
 {
     public class Api
     {

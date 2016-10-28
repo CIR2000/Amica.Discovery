@@ -9,7 +9,7 @@
     <licenseUrl>https://github.com/CIR2000/Amica.vNext.Discovery/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/CIR2000/Amica.vNext.Discovery</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>API Discovery system for the Amica platform</description>
+    <description>API Discovery service for the Amica platform</description>
     <copyright>Copyright 2016 CIR 2000</copyright>
 		<dependencies>
 			<group targetFramework="portable45-net45+win8+wp8+wpa81">
@@ -23,6 +23,6 @@
 		</dependencies>
 	</metadata>
 	<files>
-		<file src="bin\Release\Discovery.???" target="lib\portable45-net45+win8+wp8+wpa81" />
+		<file src="bin\Release\Amica.Discovery.???" target="lib\portable45-net45+win8+wp8+wpa81" />
 	</files>
 </package>

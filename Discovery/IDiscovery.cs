@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Amica.vNext
+namespace Amica.Discovery
 {
     interface IDiscovery
     {

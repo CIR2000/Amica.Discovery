@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Discovery\Discovery.csproj">
-      <Project>{f2e61202-0fe9-4521-9216-1bbe1a856b20}</Project>
+      <Project>{6ea3966d-8d0d-44db-a793-e4779bf9ee03}</Project>
       <Name>Discovery</Name>
     </ProjectReference>
   </ItemGroup>

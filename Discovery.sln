@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{99860A1D-1D85-4043-89B9-6FD3025060E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discovery", "Discovery\Discovery.csproj", "{F2E61202-0FE9-4521-9216-1BBE1A856B20}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E09399B-EA6D-4560-AFCD-3768D03A8E2F}"
 	ProjectSection(SolutionItems) = preProject
 		AUTHORS = AUTHORS
@@ -15,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discovery.NetStandard", "Discovery.NetStandard\Discovery.NetStandard.csproj", "{ECBD0722-C30F-4C8C-86B8-019243B9CB56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discovery", "Discovery\Discovery.csproj", "{6EA3966D-8D0D-44DB-A793-E4779BF9EE03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,14 +25,10 @@ Global
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99860A1D-1D85-4043-89B9-6FD3025060E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2E61202-0FE9-4521-9216-1BBE1A856B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2E61202-0FE9-4521-9216-1BBE1A856B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2E61202-0FE9-4521-9216-1BBE1A856B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2E61202-0FE9-4521-9216-1BBE1A856B20}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ECBD0722-C30F-4C8C-86B8-019243B9CB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECBD0722-C30F-4C8C-86B8-019243B9CB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECBD0722-C30F-4C8C-86B8-019243B9CB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECBD0722-C30F-4C8C-86B8-019243B9CB56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA3966D-8D0D-44DB-A793-E4779BF9EE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA3966D-8D0D-44DB-A793-E4779BF9EE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA3966D-8D0D-44DB-A793-E4779BF9EE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA3966D-8D0D-44DB-A793-E4779BF9EE03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
